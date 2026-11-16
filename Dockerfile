@@ -8,7 +8,7 @@ WORKDIR /app
 
 RUN pip install --no-cache-dir \
     runpod==1.7.9 \
-    diffusers==0.35.1 \
+    diffusers==0.36.0 \
     transformers==4.51.3 \
     accelerate==1.6.0 \
     "imageio[ffmpeg]==2.37.0" \
