@@ -22,7 +22,12 @@ pipe = WanPipeline.from_pretrained(
 )
 
 pipe.enable_model_cpu_offload()
-pipe.vae.disable_tiling()
+pipe.vae.enable_tiling(
+    tile_sample_min_height=256,
+    tile_sample_min_width=256,
+    tile_sample_stride_height=192,
+    tile_sample_stride_width=192,
+)
 
 
 def handler(job):
