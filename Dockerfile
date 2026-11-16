@@ -22,3 +22,4 @@ ENV PYTHONUNBUFFERED=1
 
 CMD ["python", "-u", "/app/handler.py"]
 # Rebuild with VAE tiling disabled
+# Trigger build after reconnect
