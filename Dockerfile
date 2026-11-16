@@ -12,7 +12,8 @@ RUN pip install --no-cache-dir \
     transformers==4.51.3 \
     accelerate==1.6.0 \
     "imageio[ffmpeg]==2.37.0" \
-    sentencepiece==0.2.0
+        sentencepiece==0.2.0 \
+    ftfy==6.3.1
 
 COPY handler.py /app/handler.py
 
