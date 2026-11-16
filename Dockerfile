@@ -11,7 +11,8 @@ RUN pip install --no-cache-dir \
     "imageio[ffmpeg]==2.37.0" \
     sentencepiece==0.2.0 \
     ftfy==6.3.1 \
-    Pillow==11.2.1
+    Pillow==11.2.1 \
+    peft==0.17.1
 COPY handler.py /app/handler.py
 ENV HF_HOME=/runpod-volume/huggingface
 ENV PYTHONUNBUFFERED=1
