@@ -22,7 +22,7 @@ pipe = WanPipeline.from_pretrained(
 )
 
 pipe.enable_model_cpu_offload()
-pipe.vae.enable_tiling()
+pipe.vae.disable_tiling()
 
 
 def handler(job):
